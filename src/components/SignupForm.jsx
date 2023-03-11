@@ -11,29 +11,29 @@ const SignupForm = ({
 }) => {
   return (
     <form onSubmit={handleSubmit}>
-      <Box display={"flex"} flexDirection={"column"} w={"100%"} rowGap={"20"}>
+      <Box display={"flex"} flexDirection={"column"} height={['100%']} w={"100%"} rowGap={["20","14","20"]}>
         <Box>
           <Input
             onChange={(e) => setUsername(e.target.value)}
-            size={["sm", "lg"]}
+            size={["sm","md", "lg"]}
             placeholder="Username"
             mb={"4"}
           />
           <Input
             onChange={(e) => setEmail(e.target.value)}
-            size={["sm", "lg"]}
+            size={["sm","md", "lg"]}
             placeholder="Email"
             mb={"4"}
           />
           <Input
             onChange={(e) => setPassword(e.target.value)}
-            size={["sm", "lg"]}
+            size={["sm","md", "lg"]}
             placeholder="Password"
             mb={"4"}
           />
           <Input
             onChange={(e) => setConfirmPassword(e.target.value)}
-            size={["sm", "lg"]}
+            size={["sm","md", "lg"]}
             placeholder="Confirm Password"
           />
         </Box>
