@@ -1,32 +1,26 @@
-import {
-  Avatar,
-  Box,
-  Flex,
-  Stack,
-  Text,
-} from "@chakra-ui/react";
+import { Flex, Stack, Text } from "@chakra-ui/react";
 import React from "react";
 import { RiTodoLine } from "react-icons/ri";
 
+import Profile from "./Profile";
+
 const Header = () => {
   return (
-    <Stack mt={"1.5"} direction={"row"} justifyContent={"space-between"} align={'center'}>
-      <Flex align={"center"} ml={"10"}>
+    <Stack
+      direction={"row"}
+      justifyContent={"space-between"}
+      alignItems={"center"}
+    >
+      <Flex align={"center"} gap={"2"} color={"#03015d"}>
         <Text fontSize={"2xl"}>
           <RiTodoLine />
         </Text>
-        <Text fontSize={"2xl"} fontWeight={"bold"} ml={"1"}>
+        <Text fontSize={["2xl", "4xl"]} fontWeight={"bold"}>
           Todo App
         </Text>
       </Flex>
 
-      <Box >
-        <Avatar
-      
-          marginRight={"10"}
-          src="https://bit.ly/dan-abramov"
-        />
-      </Box>
+      <Profile />
     </Stack>
   );
 };
