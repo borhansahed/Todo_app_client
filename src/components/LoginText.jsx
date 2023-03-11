@@ -11,12 +11,12 @@ const LoginText = ({ title, textSize }) => {
       w={"50%"}
       pt={["24", "12"]}
       borderRadius={"2xl"}
-      px={["3", "20"]}
+      px={["4", "20"]}
     >
       <Text fontSize={["3xl", "5xl"]} fontWeight={"bold"} mb={"5"}>
         {title}
       </Text>
-      <Text w={["44", textSize]} fontSize={"smaller"}>
+      <Text w={["40", textSize]} fontSize={"smaller"}>
         Login and start creating your next task Don't have an account?{" "}
         <span style={{ fontWeight: "bold" }}>
           <Link to={"/signin"}>Sign up</Link>
